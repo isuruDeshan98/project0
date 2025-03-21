@@ -797,8 +797,8 @@
                 "text": "Web\nService"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -894,12 +894,34 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "651734e9-c3c6-4238-aa3a-7bcfdf48855b",
+                  "title": "Ddos attack",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Denial of service",
+                  "description": "attacks that aim to make a system or service unavailable to legitimate users by overwhelming it with traffic or exploiting vulnerabilities",
+                  "mitigation": "Add ddos protection",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 15,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 0,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 1,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -1270,8 +1292,8 @@
                 "text": "Payment \nprocces"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -1367,12 +1389,34 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "handlesCardPayment": false,
               "handlesGoodsOrServices": false,
               "isWebApplication": false,
               "privilegeLevel": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "ac14a447-7f3a-4aac-976a-9ef3deb2aa48",
+                  "title": "Unauthorized access",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Spoofing",
+                  "description": "Unauthorized access to payment systems",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 16,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "tampering": 0,
+                "repudiation": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0,
+                "elevationOfPrivilege": 0
+              }
             }
           },
           {
@@ -1481,6 +1525,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Lecturer",
-    "threatTop": 14
+    "threatTop": 16
   }
 }
