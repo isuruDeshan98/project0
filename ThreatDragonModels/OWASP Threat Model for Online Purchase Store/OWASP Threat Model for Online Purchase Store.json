@@ -285,7 +285,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -305,14 +306,28 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": [],
+              "threats": [
+                {
+                  "id": "61179ac0-9532-487d-82d5-752d3e31b185",
+                  "title": "HTTP Request Manipulation",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Tampering",
+                  "description": "Attackers manipulate HTTPS requests.. chances for this threat is low because it already encrypted",
+                  "mitigation": "Verify  the ssl certificates are not expired",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 5,
+                  "score": ""
+                }
+              ],
               "threatFrequency": {
-                "tampering": 0,
+                "tampering": 2,
                 "informationDisclosure": 0,
                 "denialOfService": 0
               }
@@ -1141,7 +1156,7 @@
           {
             "position": {
               "x": 430,
-              "y": 360
+              "y": 370
             },
             "size": {
               "width": 190,
@@ -1363,6 +1378,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Lecturer",
-    "threatTop": 4
+    "threatTop": 6
   }
 }
