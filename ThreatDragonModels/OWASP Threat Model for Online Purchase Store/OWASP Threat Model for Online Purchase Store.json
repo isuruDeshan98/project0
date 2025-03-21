@@ -687,7 +687,8 @@
             "shape": "flow",
             "attrs": {
               "line": {
-                "stroke": "#333333",
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "targetMarker": {
                   "name": "block"
                 },
@@ -707,12 +708,31 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "isBidirectional": false,
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [
+                {
+                  "id": "232724da-b75a-48a0-bd1c-bca4c7a113c9",
+                  "title": "Https request manipulation",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Tampering",
+                  "description": "Manipulation the payment request with fraud details",
+                  "mitigation": "Verify that ssl certificates are not expired and use vpn to send requests",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 17,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "tampering": 1,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "HTTPS Payment\nRequest"
@@ -912,10 +932,23 @@
                   "new": false,
                   "number": 15,
                   "score": ""
+                },
+                {
+                  "id": "c3b0bede-30f4-4a5f-9a4c-668c3699be7a",
+                  "title": "Sql injection",
+                  "status": "Open",
+                  "severity": "Low",
+                  "type": "Spoofing",
+                  "description": "Sending sql injection with the data to get the access to the system",
+                  "mitigation": "Add proper validation in the input fields. Use orm layer to connect with data base",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 18,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
-                "spoofing": 0,
+                "spoofing": 1,
                 "tampering": 0,
                 "repudiation": 0,
                 "informationDisclosure": 0,
@@ -1525,6 +1558,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Lecturer",
-    "threatTop": 16
+    "threatTop": 18
   }
 }
