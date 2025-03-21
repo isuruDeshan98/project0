@@ -1462,13 +1462,26 @@
                   "new": false,
                   "number": 16,
                   "score": ""
+                },
+                {
+                  "id": "5c2a043c-6ec9-4928-8b13-e66d659b5a74",
+                  "title": "Sensitive data leak",
+                  "status": "Mitigated",
+                  "severity": "Low",
+                  "type": "Information disclosure",
+                  "description": "Leakage of sensitive data like card details ",
+                  "mitigation": "Use encrypted vault to store sensitive data",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 20,
+                  "score": ""
                 }
               ],
               "threatFrequency": {
                 "spoofing": 1,
                 "tampering": 0,
                 "repudiation": 0,
-                "informationDisclosure": 0,
+                "informationDisclosure": 1,
                 "denialOfService": 0,
                 "elevationOfPrivilege": 0
               }
@@ -1580,6 +1593,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Lecturer",
-    "threatTop": 19
+    "threatTop": 20
   }
 }
