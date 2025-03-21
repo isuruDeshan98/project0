@@ -928,7 +928,17 @@
             "target": {
               "cell": "63df8807-b441-4dee-b918-594a4599db87",
               "port": "6df4e35e-9796-47a4-b861-b8f526ec6b77"
-            }
+            },
+            "vertices": [
+              {
+                "x": 710,
+                "y": 50
+              },
+              {
+                "x": 800,
+                "y": 30
+              }
+            ]
           },
           {
             "shape": "flow",
@@ -966,13 +976,73 @@
             ],
             "id": "74d52fbb-b6ed-4712-80b1-d2a634be22ce",
             "source": {
-              "x": 560,
-              "y": 50
+              "cell": "f7db1709-669f-4140-a675-0ebf8df89065",
+              "port": "91097348-0cd0-4189-a384-49126e496d05"
             },
             "target": {
               "cell": "943ed181-4207-4931-9302-9acab29883f8",
               "port": "6df4e35e-9796-47a4-b861-b8f526ec6b77"
-            }
+            },
+            "vertices": [
+              {
+                "x": 680,
+                "y": 210
+              },
+              {
+                "x": 720,
+                "y": 210
+              }
+            ]
+          },
+          {
+            "shape": "flow",
+            "attrs": {
+              "line": {
+                "stroke": "#333333",
+                "targetMarker": {
+                  "name": "block"
+                },
+                "sourceMarker": {
+                  "name": ""
+                },
+                "strokeDasharray": null
+              }
+            },
+            "width": 200,
+            "height": 100,
+            "zIndex": 25,
+            "connector": "smooth",
+            "data": {
+              "type": "tm.Flow",
+              "name": "Verfication",
+              "description": "",
+              "outOfScope": false,
+              "reasonOutOfScope": "",
+              "hasOpenThreats": false,
+              "isBidirectional": false,
+              "isEncrypted": false,
+              "isPublicNetwork": false,
+              "protocol": "",
+              "threats": []
+            },
+            "labels": [
+              "Verficatio"
+            ],
+            "id": "45f30231-43f3-47dd-88fb-f66105f048c7",
+            "source": {
+              "cell": "63df8807-b441-4dee-b918-594a4599db87",
+              "port": "6df4e35e-9796-47a4-b861-b8f526ec6b77"
+            },
+            "target": {
+              "x": 750,
+              "y": 130
+            },
+            "vertices": [
+              {
+                "x": 670,
+                "y": -60
+              }
+            ]
           }
         ],
         "description": "Online purchase platform"
