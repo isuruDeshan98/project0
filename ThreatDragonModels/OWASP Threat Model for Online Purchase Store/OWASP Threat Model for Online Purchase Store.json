@@ -165,8 +165,8 @@
                 "text": "Seller"
               },
               "body": {
-                "stroke": "#333333",
-                "strokeWidth": 1.5,
+                "stroke": "red",
+                "strokeWidth": 2.5,
                 "strokeDasharray": null
               }
             },
@@ -262,9 +262,27 @@
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
-              "hasOpenThreats": false,
+              "hasOpenThreats": true,
               "providesAuthentication": false,
-              "threats": []
+              "threats": [
+                {
+                  "id": "a66719c1-a673-444a-af92-51dbca304e1b",
+                  "title": "User Impersonation",
+                  "status": "Open",
+                  "severity": "High",
+                  "type": "Spoofing",
+                  "description": "Threat actors impersonate legitimate users to gain unauthorized access",
+                  "mitigation": "",
+                  "modelType": "STRIDE",
+                  "new": false,
+                  "number": 11,
+                  "score": ""
+                }
+              ],
+              "threatFrequency": {
+                "spoofing": 1,
+                "repudiation": 0
+              }
             }
           },
           {
@@ -461,20 +479,20 @@
               "threats": [
                 {
                   "id": "f9b99cef-1c90-49ef-91ba-2a1008de87c4",
-                  "title": "New STRIDE threat",
+                  "title": "HTTPS Request manipulation",
                   "status": "Open",
                   "severity": "TBD",
                   "type": "Tampering",
-                  "description": "Provide a description for this threat",
-                  "mitigation": "Provide remediation for this threat or a reason if status is N/A",
+                  "description": "Attackers manipulate HTTPS requests.. chances for this threat is low because it already encrypted",
+                  "mitigation": "Verify that ssl certificates are not expired",
                   "modelType": "STRIDE",
-                  "new": true,
+                  "new": false,
                   "number": 7,
                   "score": ""
                 }
               ],
               "threatFrequency": {
-                "tampering": 0,
+                "tampering": 1,
                 "informationDisclosure": 0,
                 "denialOfService": 0
               }
@@ -1411,6 +1429,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Lecturer",
-    "threatTop": 8
+    "threatTop": 11
   }
 }
