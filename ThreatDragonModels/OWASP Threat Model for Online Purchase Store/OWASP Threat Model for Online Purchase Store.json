@@ -310,7 +310,12 @@
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "HTTPS Request"
@@ -360,7 +365,12 @@
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "HTTPS Response"
@@ -405,7 +415,7 @@
             "connector": "smooth",
             "data": {
               "type": "tm.Flow",
-              "name": "HTTPS Response",
+              "name": "HTTPS Request",
               "description": "",
               "outOfScope": false,
               "reasonOutOfScope": "",
@@ -414,10 +424,15 @@
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             },
             "labels": [
-              "HTTPS Response"
+              "HTTPS Request"
             ],
             "id": "978f759f-e307-4843-8633-2dab9ec0fd4e",
             "source": {
@@ -464,7 +479,12 @@
               "isEncrypted": false,
               "isPublicNetwork": false,
               "protocol": "",
-              "threats": []
+              "threats": [],
+              "threatFrequency": {
+                "tampering": 0,
+                "informationDisclosure": 0,
+                "denialOfService": 0
+              }
             },
             "labels": [
               "HTTPS Response"
@@ -1343,6 +1363,6 @@
     ],
     "diagramTop": 1,
     "reviewer": "Lecturer",
-    "threatTop": 0
+    "threatTop": 4
   }
 }
